@@ -1,6 +1,63 @@
 import React from "react" 
 import ReactDOM from "react-dom/client"
 
+//React.createElement => Object => HTMLElement(render)
+
+//react element is an object at the end of the day
+
+const heading = React.createElement(
+    "h1", 
+    {id:"heading"},
+    "Nmaste React 🚀"
+);
+console.log(heading);
+
+//react and JSX are different, we can write react without JSX also. JSX makes developer's life easy
+
+//JSX is a aconvention where we merge HTML and JS together
+
+const jsxHeading = <h1>Namaste React using JSX 🌉</h1>
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 <div id="parent">
@@ -16,7 +73,7 @@ import ReactDOM from "react-dom/client"
 
 ReactElement(Object) => HTML(Browser Understands)
 
-*/
+
 
 const parent = React.createElement('div', { id: 'parent' }, [
   React.createElement('div', { id: 'child' }, [
@@ -49,3 +106,4 @@ const root = ReactDOM.createRoot(document.getElementById('root')); // It's the j
 root.render(parent);
 
 // In React, Render is the technique that can redirect a page with the help of function render(). Most importantly, render a function we can use to define the HTML code within the HTML element. It helps to display certain views in the UI using certain logic defined in the render function and returns the output.
+*/
