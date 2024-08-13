@@ -16,11 +16,19 @@ console.log(heading);
 
 //JSX is a aconvention where we merge HTML and JS together
 
-const jsxHeading = <h1>Namaste React using JSX 🌉</h1>
+//JSX - HTML-like or XML-like syntax
+
+//jsxHeading is a react element
+
+//JS engine understands all versions of Ecma script ES6, so it doesn't understand JSX
+//this code is transpiled(done by PARCEL) before it goes to the JS engine, js engines recieves the code that it understands
+
+const jsxHeading = <h1 id="heading"> Namaste React using JSX 🌉</h1>
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(jsxHeading);
 
-root.render(heading);
+root.render(jsxHeading);
 
 
 

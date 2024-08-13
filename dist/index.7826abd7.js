@@ -2965,15 +2965,21 @@ const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
 console.log(heading);
 //react and JSX are different, we can write react without JSX also. JSX makes developer's life easy
 //JSX is a aconvention where we merge HTML and JS together
+//JSX - HTML-like or XML-like syntax
+//jsxHeading is a react element
+//JS engine understands all versions of Ecma script ES6, so it doesn't understand JSX
+//this code is transpiled(done by PARCEL) before it goes to the JS engine, js engines recieves the code that it understands
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "Namaste React using JSX \uD83C\uDF09"
+    id: "heading",
+    children: " Namaste React using JSX \uD83C\uDF09"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 19,
+    lineNumber: 26,
     columnNumber: 20
 }, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(heading); /* 
+console.log(jsxHeading);
+root.render(jsxHeading); /* 
 
 <div id="parent">
   <div id=child>
