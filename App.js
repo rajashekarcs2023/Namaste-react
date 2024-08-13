@@ -21,7 +21,7 @@ console.log(heading);
 //jsxHeading is a react element
 
 //JS engine understands all versions of Ecma script ES6, so it doesn't understand JSX
-//this code is transpiled(done by PARCEL) before it goes to the JS engine, js engines recieves the code that it understands
+//this code is transpiled(done by Babel -> this transpiling job is given by parcel to babel) before it goes to the JS engine, js engines recieves the code that it understands
 
 const jsxHeading = <h1 id="heading"> Namaste React using JSX 🌉</h1>
 
